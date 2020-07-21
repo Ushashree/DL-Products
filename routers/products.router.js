@@ -25,7 +25,7 @@ const storage = multer.diskStorage({
     }
 });
 const upload = multer({storage: storage});
-
+console.log("PRINTING MESSAGE");
 
 router.get('/products', AsyncAwaitProductCtrl.getProducts);
 router.get('/products/:pageIndex/:pageSize', AsyncAwaitProductCtrl.getProductsByIndex);
